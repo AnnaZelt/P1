@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Aesthetic Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light gray background color */
+            color: #333; /* Default text color */
+        }
+
+        /* Define the colors for each section */
+        .section1 {
+            background-color: #ffbf80; /* Light orange */
+            height: 20vh; /* Adjusted height for better appearance */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff; /* Text color on the orange background */
+        }
+
+        .section2 {
+            background-color: #66cccc; /* Light teal */
+            padding: 20px;
+            text-align: center;
+            color: #fff; /* Text color on the teal background */
+        }
+
+        .section3 {
+            background-color: #ffccff; /* Light pink */
+            height: 60vh; /* Adjusted height for better appearance */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* Style the links with images */
+        .section3 a {
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        /* Add a hover effect to the images */
+        .section3 img:hover {
+            transform: scale(1.1);
+        }
+
+    </style>
 </head>
+
 <body>
-    <form action="myserver.com" method="post" enctype="application/x-www-form-urlencoded">
-        Color:<br>
-        <input type="color" name="color" id="color"><br>
-        Model:<br>
-        <input type="number" name="number" id="number"><br>
-        <input type="submit" value="Submit">
-    </form><br>
-    <a href="about.html">About</a>
-    <a href="login.html">Login</a>
-    <a href="test.html">Test</a>
+    <div class="section1">
+        <h1><strong>Your favorite Car:</strong></h1>
+    </div>
+    <div class="section2">
+        <form action="myserver.com" method="post" enctype="application/x-www-form-urlencoded">
+            <label for="color">Color:</label><br>
+            <input type="color" name="color" id="color"><br><br>
+            <label for="number">Model:</label><br>
+            <input type="number" name="number" id="number" min="1886">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="section3">
+        <a href="about.html"><img src="https://picsum.photos/id/237/150" alt="About"></a>
+        <a href="login.html"><img src="https://picsum.photos/id/238/150" alt="Login"></a>
+        <a href="test.html"><img src="https://picsum.photos/id/239/150" alt="Test"></a>
+    </div>
 </body>
+
 </html>
